@@ -1,0 +1,45 @@
+<!--
+  Project: Keeplink
+  Description: A lightweight client-side web application for saving, displaying,
+               and managing bookmarks using browser localStorage.
+  Purpose: Demonstrates strong fundamentals in semantic HTML, accessibility,
+           and clean UI structure without reliance on frameworks.
+  Author: Gene Howell
+  Created: December, 2025
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keeplink</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Keeplink: Lightweight client-side bookmark manager with clean UI and accessibility support." />
+  </head>
+  <body>
+    <main class="app-container">
+      <h1>Keeplink</h1>
+
+      <form id="bookmark-form" novalidate>
+        <div class="input-group">
+          <label for="bookmark-name">Bookmark Name</label>
+          <input type="text" id="bookmark-name" />
+        </div>
+
+        <div class="input-group">
+          <label for="bookmark-url">Bookmark URL</label>
+          <input type="url" id="bookmark-url" placeholder="https://example.com" />
+        </div>
+
+        <p id="feedback" aria-live="polite"></p>
+
+        <button type="submit">Add Bookmark</button>
+      </form>
+
+      <p id="empty-state">No bookmarks yet.</p>
+      <ul id="bookmark-list"></ul>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -73,3 +73,7 @@ To use locally:
 
    ```bash
    git clone https://github.com/yourusername/keeplink.git
+
+## Author
+
+Gene Howell
